@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Candidato {
+
+int Total_De_Acertos;
+int Acertos;
+char Respostas [51];
+
+                 };
+
+int main(void)
+{
+    struct Candidato vet_Candidato [5];
+    char Gabarito [51] = {'b','c','d','a','d','c','e','e','a','d','e','a','e','a','a','b','c','d','a','c','e','e','e','a','b','a','b','c','e','a','b','d','e','a','e','a','a','b','c','d','a','e','e','a','a','b','d','a','b','c','e','d','\n'};
+    int Acertos = 0;
+    int LOOP = 1;
+    int CONTADOR;
+    int Matricula;
+    int Respostas;
+
+    for (LOOP = 1; LOOP <= 5; LOOP ++)
+
+    {
+        fflush (stdin);
+        printf ("\nDigite suas respostas (50 letras entre 'A' e 'E'): Candidato 0%d \n\n", LOOP);
+        scanf ("%s", Respostas);
+        gets (vet_Candidato[LOOP].Respostas);
+        fflush (stdin);
+        Acertos;
+        printf ("\nDigite sua matricula: ");
+        fflush (stdin);
+        scanf ("%d", &Matricula);
+        fflush (stdin);
+        printf ("\nTotal de acertos: %d\n", Respostas = Gabarito);
+
+    for (CONTADOR = 0; CONTADOR <= 50; CONTADOR ++)
+
+    {
+        if (Gabarito[CONTADOR] == vet_Candidato[CONTADOR].Respostas)
+
+        {
+            Acertos++;
+            vet_Candidato[CONTADOR].Total_De_Acertos;
+
+        }
+
+    }
+
+    }
+
+    return 0;
+}
